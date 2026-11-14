@@ -3,8 +3,8 @@ dotenv.config();
 import mongoose from 'mongoose';
 import app from './src/app.js';
 
-console.log("MongoDB URI:", !!process.env.MONGODB_URI);
-console.log("JWT Secret:", !!process.env.JWT_SECRET);
+// console.log("MongoDB URI:", !!process.env.MONGODB_URI);
+// console.log("JWT Secret:", !!process.env.JWT_SECRET);
 
 const PORT = process.env.PORT || 5000;
 if (!process.env.MONGODB_URI || !process.env.JWT_SECRET) {

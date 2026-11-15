@@ -1,3 +1,5 @@
+
+
 import dotenv from 'dotenv';
 dotenv.config();
 import mongoose from 'mongoose';
@@ -11,6 +13,7 @@ if (!process.env.MONGODB_URI || !process.env.JWT_SECRET) {
   console.error('MONGODB_URI and JWT_SECRET are required.');
   process.exit(1);
 }
+
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     console.log('MongoDB connected');
